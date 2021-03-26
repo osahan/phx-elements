@@ -4,7 +4,7 @@ import Reloader from '../../lib/decorators/reloader';
 @customElement('phx-crypto-ticker')
 @Reloader({
     timer: 10000,
-    reloaderMethodName: 'fetchData'
+    reloaderCallback: 'fetchData'
 })
 export class PhxCryptoTicker extends LitElement {
     static get properties() {
