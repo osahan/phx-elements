@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-plugin-prettier",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "ban-types": false,
+        "prettier": true,
+        "ordered-imports": false,
+        "object-literal-sort-keys": false,
+        "quotemark": [true, "single", "avoid-escape", "avoid-template"],
+        "no-implicit-dependencies": false,
+        "interface-name": false,
+        "no-submodule-imports": false,
+        "no-empty-interface": false,
+        "no-empty": false,
+        "jsx-boolean-value": false,
+        "semicolon": false,
+        "jsx-no-lambda": false,
+        "no-bitwise": false
+    },
+    "linterOptions": {
+        "exclude": ["packages/node_modules/**", "packages/**/dist/**"]
+    }
+}
